@@ -190,7 +190,7 @@ header{
 
 .donation__card{
   width: 1160px;
-  height: 964px;
+  height: 924px;
   background: rgba(255, 255, 255, 0.52);
   backdrop-filter: blur(2px);
   border-radius: 20px;
@@ -215,13 +215,14 @@ header{
 }
 
 .donation_animals{
-  margin: 61px auto 0;
+  margin: 61px 0 0px;
   display: flex;
   justify-content: center;
+  width: 1135px;	
 }
 
 .donation__calc{
-  margin: 104px 0 0;
+  margin: 104px 0 0 0;
 }
 
 .donation__animalsCount{
@@ -246,7 +247,7 @@ header{
   width: 14px;
   height: 14px;
   position: relative;
-  margin: 119px 0 0 11px;
+  margin: 125px 0 0 17px;
 }
 
 .donation__multiply::before,
@@ -354,7 +355,7 @@ header{
   color: #333B41;
   position: absolute;
   top: 31px;
-  left: -11px;
+  left: -25px;
 }
 
 .donation__switcher input[type="radio"]:checked + label span{
@@ -488,9 +489,10 @@ footer{
 
 .footer__input{
   display: flex;
+  margin: 14px 0 0 0
 }
 
-.footer__borderMail{
+.footer__borderMail{	
   background: linear-gradient(113.96deg, #F9804B 1.49%, #FE9013 101.44%);
   border-radius: 2px;
   width: 228px;
@@ -517,7 +519,7 @@ footer{
 }
 
 .footer__donateBTN{
-  margin: 52px 0 0;
+  margin: 40px 0 0;
 }
 
 .footer__bottom{
@@ -553,7 +555,7 @@ footer{
 }
 
 .footer__menu{
-  margin: 112px 0 0 288px;
+  margin: 0 0 14px 182px;
   display : flex;
   align-items : center;
   font-weight: 400;
@@ -579,6 +581,25 @@ footer{
 .footer__author{
   font-weight: 100;
   font-size: 16px;
-  line-height: 130%;
+  line-height: 170%;
   color: #FFFFFF;
+  margin: 0 0 10px 0;
 }
+  margin: 14px 0 0 0
+}
+
+.footer__borderMail{	
+  background: linear-gradient(113.96deg, #F9804B 1.49%, #FE9013 101.44%);
+  border-radius: 2px;
+  width: 228px;
+  height: 42px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer__mail{
+  width: 216px;
+  height: 32px;
+  background: #111115;
+  font-style: normal;

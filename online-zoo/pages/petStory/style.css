@@ -143,9 +143,9 @@ header{
 .watchAnimals{
   margin: 0 auto;
   width: 1600px;
-  height: 780px;
+  height: 700px;
   position: relative;
-  background: url('../../assets/images/Giant Panda.png') 0 0/cover no-repeat; 
+  background: url('../../assets/images/Giant Panda.png') 0 -80px/cover no-repeat; 
   font-family: Roboto;
 }
   
@@ -256,7 +256,7 @@ header{
   font-weight: 400;
   letter-spacing: 0em;
   text-align: left;
-  line-height: 1;
+  line-height: 1.1;
   color: #333B41;
 }
   
@@ -515,7 +515,7 @@ header{
 .testimonials{
   margin: 0 auto;
   padding: 140px 0 0 0;
-  height:739px;
+  height:779px;
   width: 1600px;
   font-family: Roboto;
   position: relative;
@@ -529,7 +529,7 @@ header{
 
 .testimonials__rightBotIMG{
   width: 246px;
-  height: 250px;
+  height: 275px;
   background: url('../../assets/images/leave.png') 0 0/cover no-repeat;
   position: absolute;
   bottom: 0;
@@ -669,10 +669,10 @@ footer{
 
 .footer__input{
   display: flex;
-
+  margin: 14px 0 0 0
 }
 
-.footer__borderMail{
+.footer__borderMail{	
   background: linear-gradient(113.96deg, #F9804B 1.49%, #FE9013 101.44%);
   border-radius: 2px;
   width: 228px;
@@ -699,7 +699,7 @@ footer{
 }
 
 .footer__donateBTN{
-  margin: 52px 0 0;
+  margin: 40px 0 0;
 }
 
 .footer__bottom{
@@ -735,7 +735,7 @@ footer{
 }
 
 .footer__menu{
-  margin: 112px 0 0 288px;
+  margin: 0 0 14px 182px;
   display : flex;
   align-items : center;
   font-weight: 400;
@@ -761,6 +761,7 @@ footer{
 .footer__author{
   font-weight: 100;
   font-size: 16px;
-  line-height: 130%;
+  line-height: 170%;
   color: #FFFFFF;
+  margin: 0 0 10px 0;
 }
