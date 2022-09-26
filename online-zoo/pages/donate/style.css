@@ -17,6 +17,28 @@ a:hover {
   background: linear-gradient(113.96deg, #F9804B 1.49%, #FE9013 101.44%);
   text-transform: uppercase;
   color: #FFFFFF;
+  font-family: 'Roboto';
+  font-style: normal;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 22px;
+  letter-spacing: 0em;
+  cursor: pointer;
+  border: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+  
+.orangeRectangleBTN{
+  height: 54px;
+  width: 298px;
+  border-radius: 5px;
+  background: linear-gradient(113.96deg, #F9804B 1.49%, #FE9013 101.44%);;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  font-family: 'Roboto';
+  font-style: normal;
   font-size: 16px;
   font-weight: 500;
   line-height: 22px;
@@ -25,21 +47,19 @@ a:hover {
   cursor: pointer;
   border: none;
 }
-  
-.orangeRectangleBTN{
-  height: 54px;
-  width: 298px;
-  border-radius: 5px;
-  background: linear-gradient(113.96deg, #F9804B 1.49%, #FE9013 101.44%);
-  text-transform: uppercase;
-  color: #FFFFFF;
-  font-size: 16px;
-  font-weight: 500;
-  line-height: 22px;
-  letter-spacing: 0em;
-  text-align: center;
-  cursor: pointer;
-  border: none;
+.orangeBTN:hover,
+.orangeRectangleBTN:hover{
+  background: #E47209;
+}
+
+.orangeBTN:active,
+.orangeRectangleBTN:active{
+background: #4B9200;
+}
+
+.orangeBTN:disabled,
+.orangeRectangleBTN:disabled{
+  background: #767474;
 }
 
 .logo{
@@ -47,6 +67,8 @@ a:hover {
   height : 52px;
   border: solid 1.2px #FFFFFF;
   border-radius: 2px;
+  font-family: 'Roboto';
+  font-style: normal;
   font-weight: 400;
   font-size: 19px;
   line-height: 1.2;
@@ -67,13 +89,30 @@ a:hover {
   position : absolute;
 }
 
+h1{
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 19px;
+  line-height: 1.2;
+  text-align: center;
+  position : relative;
+  color: #FFFFFF;
+  margin-top: 0pt;
+  margin-bottom: 0pt;
+  padding-left: 0pt;
+  padding-right: 0pt;
+}
+
 .whiteBTN{
   height: 42px;
   width: 129px;
   border-radius: 5px;
   background: #F1F3F2;
-  border: 1px solid #4B9200;
-  color: #4B9200;
+  border: 1px solid #333B41;
+  color: #000000;
+  font-family: 'Roboto';
+  font-style: normal;
   font-size: 16px;
   font-weight: 400;
   line-height: 1.4;
@@ -82,20 +121,25 @@ a:hover {
   cursor: pointer;
 }
 
+.whiteBTN:active{
+  border: 1px solid #4B9200;
+  color: #4B9200;
+}
+ 
   /* ---------------------header------------------ */
   
 header{
   width : 1600px;
+  margin: 0 auto;
   height : 80px;
   background : #000000;
   color : #FFFFFF;
   font-family: 'Roboto';
   font-style: normal;
-  margin: 0 auto;
 }
   
 .header__content{
-  max-width : 1150px;
+  max-width : 1160px;
   height : 100%;
   margin: 0 auto;
   display : flex;
@@ -116,7 +160,7 @@ header{
   font-size: 16px;
   line-height: 1.4;
 }
-  
+ 
 .header__menu a{
   color : #FFFFFF;
 }
@@ -137,15 +181,14 @@ header{
   line-height: 22px;
   letter-spacing: 0em;
 }
-  
-  /* --------------------------section 1--------------- */
-.panda{
-  margin: 0 auto;
-  width: 1600px;
-  height: 390px;
-  background: url('../../assets/images/Giant Panda.png') 0 50%/100% auto no-repeat; 
-}  
+.header__desined a{
+  color : #FFFFFF;
+}
 
+.header__desined a:active{
+  color : orange;
+}
+  
   /* --------------------------section 2--------------- */
 .donation{
   width : 1600px;
@@ -184,7 +227,7 @@ header{
   font-size: 36px;
   line-height: 130%;
   color: #FE9013;
-  margin: 40px 0 0;
+  margin: 45px 0 0;
   text-align: left;
 }    
 
@@ -204,6 +247,7 @@ header{
   line-height: 120%;
   text-align: center;
   color: #FE9013;
+  margin: 1px 16px 0 0;
 }
 
 .donation__cardText{
@@ -215,10 +259,10 @@ header{
 }
 
 .donation_animals{
-  margin: 61px 0 0px;
+  margin: 61px auto 0px 10px;
   display: flex;
   justify-content: center;
-  width: 1135px;	
+  width: 1100px;	
 }
 
 .donation__calc{
@@ -247,7 +291,7 @@ header{
   width: 14px;
   height: 14px;
   position: relative;
-  margin: 125px 0 0 17px;
+  margin: 125px 0 0 20px;
 }
 
 .donation__multiply::before,
@@ -275,15 +319,24 @@ header{
 .donation__Img{
   width: 270px;
   height: 246px;
-  margin: 0 0 0 64px;
+  margin: 0 0 0 55px;
 }
+
+.donation__amount{
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 140%;
+  color: #000000;
+  margin: 48px 0 0 94px;
+}
+
 
 .donation__switcher{
   width: 924px;
   height: 26px;
   background: #404950;
   border-radius: 2px;
-  margin: 87px auto 0;
+  margin: 16px 0 0 90px;
   padding: 0 26px;
   display: flex;
   justify-content: space-between;
@@ -365,7 +418,7 @@ header{
 .donation__inputBorder{
   margin: 98px auto 0;
   padding: 0 10px;
-  width: 268px;
+  width: 248px;
   height: 54px;
   border: 1px solid #929699;
   border-radius: 2px;
@@ -385,15 +438,28 @@ header{
   border: none;
   outline: none;
 }
-
 .donation__input:focus{
   outline: none;
 }
+
+
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
+
+input[type='number'],
+input[type="number"]:hover,
+input[type="number"]:focus {
+    appearance: none;
+    -moz-appearance: textfield;
+}
+
 .switcher-dates{
   display: flex;
   justify-content: space-between;
-  width: 197px;
-  margin: 27px auto 0;
+  width: 200px;
+  margin: 25px 0 0 470px;
 }
 
 .switcher-date{
@@ -401,6 +467,9 @@ header{
   display: flex;
   justify-content: center;
   align-items: center;
+}
+.switcher-date label{
+  margin: 0 0 0 7px;
 }
 
 .switcher-date input[type="radio"]{
@@ -444,7 +513,7 @@ header{
 
 .donation__BTN{
   display: block;
-  margin: 30px auto 0;
+  margin: 32px auto 0;
 }
 
 .donation__share{
@@ -503,8 +572,8 @@ footer{
 }
 
 .footer__mail{
-  width: 216px;
-  height: 32px;
+  width: 222px;
+  height: 38px;
   background: #111115;
   font-style: normal;
   font-weight: 400;
@@ -512,6 +581,8 @@ footer{
   line-height: 140%;
   color: #BDBDBD;
   border-radius: 2px;
+  border: none;
+  outline: #000000;
 }
 
 .footer__submitBTN{
@@ -519,7 +590,11 @@ footer{
 }
 
 .footer__donateBTN{
-  margin: 40px 0 0;
+  margin: 35px 0 0;
+}
+
+.footer__donateBTN a{
+  color : #FFFFFF;
 }
 
 .footer__bottom{
@@ -551,11 +626,11 @@ footer{
   font-size: 16px;
   line-height: 140%;
   color: #FFFFFF;
-  margin: 0 0 0 12px;
+  margin: 0 0 5px 12px;
 }
 
 .footer__menu{
-  margin: 0 0 14px 182px;
+  margin: 0 0 8px 175px;
   display : flex;
   align-items : center;
   font-weight: 400;
@@ -581,25 +656,7 @@ footer{
 .footer__author{
   font-weight: 100;
   font-size: 16px;
-  line-height: 170%;
+  line-height: 200%;
   color: #FFFFFF;
-  margin: 0 0 10px 0;
+  margin: 0 0 2px 0;
 }
-  margin: 14px 0 0 0
-}
-
-.footer__borderMail{	
-  background: linear-gradient(113.96deg, #F9804B 1.49%, #FE9013 101.44%);
-  border-radius: 2px;
-  width: 228px;
-  height: 42px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.footer__mail{
-  width: 216px;
-  height: 32px;
-  background: #111115;
-  font-style: normal;

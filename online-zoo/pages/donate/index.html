@@ -2,13 +2,15 @@
 <html lang="en">
 
 <head>
-	<title>PetStory</title>	
+	<title>PetStory</title>
 	<link rel="stylesheet" href="style.css">
 	<link rel="stylesheet" href="../../assets/style/nullstyle.css">
 	<link rel="shortcut icon" href="">
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+	<link
+		href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+		rel="stylesheet">
 
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width,initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
@@ -38,26 +40,28 @@
 	<header>
 		<div class="header__content">
 			<div class="header__left">
-				<div class="logo">
-					<div class="petstoryOnline">
-						<span>PetStory</span>
-						<br>
-						<span>online</span>
+				<a href="./index.html">
+					<div class="logo">
+						<div class="petstoryOnline">
+							<h1>PetStory
+							online</h1>
+						</div>
+						<div class="bamboo">
+							<img src='../../assets/images/bamboo.svg' alt="">
+						</div>
 					</div>
-					<div class="bamboo">
-						<img src='../../assets/images/bamboo.svg' alt="">
-					</div>
-				</div>
+				</a>
 				<ul class="header__menu">
-					<li class="menuList"><a href="../petStory/index.html">About</a></li>
+					<li class="menuList "><a href="../petStory/">About</a></li>
 					<li class="menuList"><a href="#">Map</a></li>
 					<li class="menuList"><a href="#">Zoos</a></li>
-					<li class="menuList active-href"><a href="#">Donate</a></li>
+					<li class="menuList active-href"><a href="./index.html">Donate</a></li>
 					<li class="menuList"><a href="#">Contact us</a></li>
 				</ul>
 			</div>
-			<div class="header__desined">Designed by ©
-			</div>
+				<div class="header__desined">			
+					<a href="https://www.figma.com/file/ypzT9idgAILaSRVRmDAJxn/online-zoo-3-weeks?node-id=138%3A953">Designed by ©</a>
+				</div>
 		</div>
 	</header>
 	<div class="panda">
@@ -66,7 +70,12 @@
 		<div class="donation__content">
 			<div class="donation__title"><span>THE ZOO HAS OFFICIALLY REOPENED BUT WE STILL NEED YOUR HELP!</span>
 			</div>
-			<div class="donetion__text"><span>Even though the Zoo has been able to reopen, we are at a greatly reduced capacity with educational programs and public and private events cancelled or postponed for additional months. We need you now more than ever to help ensure that we overcome these challenges. We have been actively raising funds in the community, and we are grateful for the generosity.  But much more support is still needed, and we need your help! Please consider a gift today – no matter what size – to help us sustain our mission.</span>
+			<div class="donetion__text"><span>Even though the Zoo has been able to reopen, we are at a greatly reduced
+					capacity with educational programs and public and private events cancelled or postponed for additional
+					months. We need you now more than ever to help ensure that we overcome these challenges. We have been
+					actively raising funds in the community, and we are grateful for the generosity. But much more support is
+					still needed, and we need your help! Please consider a gift today – no matter what size – to help us
+					sustain our mission.</span>
 			</div>
 			<div class="donation__information">
 				<span>Donation Information</span>
@@ -79,19 +88,22 @@
 					<span>We know the animals bring you joy, and in these extraordinary times, we’re glad.</span>
 				</div>
 				<div class="donation_animals">
-						<div class="donation__calc">
-							<div class="donation__animalsCount">4
+					<div class="donation__calc">
+						<div class="donation__animalsCount">4
 
-							</div>
-							<div class="donation__animalsDiet">
-								<span>Panda diet for the day.</span>
-							</div>
 						</div>
-						<div class="donation__multiply">
+						<div class="donation__animalsDiet">
+							<span>Panda diet for the day.</span>
 						</div>
-						<div class="donation__Img">
-							<img src='../../assets/images/panda.svg' alt="panda">
-						</div>
+					</div>
+					<div class="donation__multiply">
+					</div>
+					<div class="donation__Img">
+						<img src='../../assets/images/panda.svg' alt="panda">
+					</div>
+				</div>
+				<div class="donation__amount">
+					<span>Amount</span>
 				</div>
 				<div class="donation__switcher">
 					<div class="donation__radio">
@@ -129,19 +141,19 @@
 					<div class="donation__switcherLine"></div>
 				</div>
 				<div class="donation__inputBorder">
-					<input type="text" name="" id="" class="donation__input" placeholder="Another amount">
+					<input type="number" max="9999" name="" id="" class="donation__input" placeholder="Another amount">
 					<div class="donation__currencyImg">
 						<img src="../../assets/images/currency.svg" alt="currency">
 					</div>
 				</div>
 				<div class="switcher-dates">
 					<div class="switcher-date">
-					<input type="radio" name="switcher-date" id="rd1" value="Monthly" >
-					<label for="rd1"><span>Monthly</span></label>
+						<input type="radio" name="switcher-date" id="rd1" value="Monthly">
+						<label for="rd1"><span>Monthly</span></label>
 					</div>
 					<div class="switcher-date">
-					<input type="radio" name="switcher-date" id="rd2" value="Once">
-					<label for="rd2"><span>Once</span></label>
+						<input type="radio" name="switcher-date" id="rd2" value="Once" checked>
+						<label for="rd2"><span>Once</span></label>
 					</div>
 				</div>
 				<button class="orangeBTN donation__BTN">Feed a friend now</button>
@@ -154,16 +166,18 @@
 	<footer>
 		<div class="footer__content">
 			<div class="footer__top">
-				<div class="logo">
-					<div class="petstoryOnline">
-						<span>PetStory</span>
-						<br>
-						<span>online</span>
+				<a href="../petStory/index.html">
+					<div class="logo">
+						<div class="petstoryOnline">
+							<span>PetStory</span>
+							<br>
+							<span>online</span>
+						</div>
+						<div class="bamboo">
+							<img src='../../assets/images/bamboo.svg' alt="">
+						</div>
 					</div>
-					<div class="bamboo">
-						<img src='../../assets/images/bamboo.svg' alt="">
-					</div>
-				</div>
+				</a>
 				<div class="footer__subscribe">
 					<div class="footer__subscribeTitle"><span>Subscribe to our news</span>
 					</div>
@@ -180,7 +194,7 @@
 				<div class="footer__socials">
 					<div class="footer__social">
 						<div class="footer__socialIMG">
-						<img src="../../assets/images/facebook.svg" alt="facebook">
+							<img src="../../assets/images/facebook.svg" alt="facebook">
 						</div>
 						<div class="footer__socialName"><span>Facebook</span>
 
@@ -188,32 +202,32 @@
 					</div>
 					<div class="footer__social">
 						<div class="footer__socialIMG">
-						<img src="../../assets/images/twitter.svg" alt="twitter">
+							<img src="../../assets/images/twitter.svg" alt="twitter">
 						</div>
 						<div class="footer__socialName"><span>Twitter</span>
 						</div>
 					</div>
 					<div class="footer__social">
 						<div class="footer__socialIMG">
-						<img src="../../assets/images/Instagram.svg" alt="Instagram">
+							<img src="../../assets/images/Instagram.svg" alt="Instagram">
 						</div>
 						<div class="footer__socialName"><span>Instagram</span>
 						</div>
-					</div>	
+					</div>
 					<div class="footer__social">
 						<div class="footer__socialIMG">
-						<img src="../../assets/images/YouTube.svg" alt="YouTube">
+							<img src="../../assets/images/YouTube.svg" alt="YouTube">
 						</div>
 						<div class="footer__socialName"><span>YouTube</span>
 						</div>
-					</div>				
+					</div>
 				</div>
-					<ul class="footer__menu">
-						<li class="menuList"><a href="../petStory/index.html">About</a></li>
-						<li class="menuList"><a href="#">Map</a></li>
-						<li class="menuList"><a href="#">Zoos</a></li>
-						<li class="menuList"><a href="#">Contact us</a></li>
-					</ul>
+				<ul class="footer__menu">
+					<li class="menuList"><a href="../petStory/index.html">About</a></li>
+					<li class="menuList"><a href="#">Map</a></li>
+					<li class="menuList"><a href="#">Zoos</a></li>
+					<li class="menuList"><a href="#">Contact us</a></li>
+				</ul>
 				<div class="footer__author">
 					<span>Designed by Alisa Samborskaya</span>
 					<br>
