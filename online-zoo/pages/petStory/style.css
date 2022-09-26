@@ -363,17 +363,25 @@ header{
   transform: translate(0px, 0);
   transition: all 0.7s ease 0s;
   opacity: 1;
+  background: rgba(0, 0, 0, 0.2);
 }
   
 .backstage__itemImg{
   width: 366px;
   height: 366px;
-  z-index: 5;
+  position: relative;
+  z-index: 100;
 }
+
 
 .backstage__itemInfo{
   display: flex;
   justify-content: space-between;
+  opacity: 0;
+  transform: translate(0, -60px);
+  transition: all 0.7s ease 0s;
+  z-index: 1;
+  position: relative;
 }
   
 .backstage__itemTitle{
@@ -766,7 +774,7 @@ footer{
 }
 
 .footer__mail{
-  width: 222px;
+  width: 212px;
   height: 38px;
   background: #111115;
   font-style: normal;
@@ -777,6 +785,7 @@ footer{
   border-radius: 2px;
   border: none;
   outline: #000000;
+  padding: 0 0 0 10px;
 }
 
 .footer__submitBTN{
@@ -812,6 +821,13 @@ footer{
   justify-content: center;
   align-items: center;
   margin: 0 0 10px 0;
+}
+
+.footer__social:active .footer__socialIMG{
+  background: #4B9200;
+}
+.footer__social:active span{
+  color: #4B9200;
 }
 
 .footer__socialName{
