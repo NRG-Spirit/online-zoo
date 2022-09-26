@@ -188,7 +188,14 @@ header{
 .header__desined a:active{
   color : orange;
 }
-  
+
+  /* --------------------------section 1--------------- */
+.panda{
+  margin: 0 auto;
+  width: 1600px;
+  height: 386px;
+  background: url('../../assets/images/Giant Panda.png') 0 50%/100% auto no-repeat; 
+} 
   /* --------------------------section 2--------------- */
 .donation{
   width : 1600px;
@@ -513,7 +520,7 @@ input[type="number"]:focus {
 
 .donation__BTN{
   display: block;
-  margin: 32px auto 0;
+  margin: 28px auto 0;
 }
 
 .donation__share{
@@ -572,7 +579,7 @@ footer{
 }
 
 .footer__mail{
-  width: 222px;
+  width: 212px;
   height: 38px;
   background: #111115;
   font-style: normal;
@@ -583,6 +590,7 @@ footer{
   border-radius: 2px;
   border: none;
   outline: #000000;
+  padding: 0 0 0 10px;
 }
 
 .footer__submitBTN{
@@ -618,6 +626,13 @@ footer{
   justify-content: center;
   align-items: center;
   margin: 0 0 10px 0;
+}
+
+.footer__social:active .footer__socialIMG{
+  background: #4B9200;
+}
+.footer__social:active span{
+  color: #4B9200;
 }
 
 .footer__socialName{
