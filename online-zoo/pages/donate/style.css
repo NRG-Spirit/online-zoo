@@ -7,6 +7,11 @@ a, a:visited {
 a:hover {
   text-decoration: none;
 }
+
+body, html{ 
+  padding: 0;
+  margin: 0;
+}
    
    /* ---------------------common components------------------ */
   
@@ -165,6 +170,8 @@ header{
   color : #FFFFFF;
 }
 
+.header__menu a:hover,
+.header__menu a:active,
 .active-href a{
   color : orange;
 }
@@ -380,7 +387,7 @@ header{
   top: 0;
   left: 0;
 }
-
+.donation__switcher input[type="radio"]:hover + label:before,
 .donation__switcher input[type="radio"]:checked + label:before{
   content: "";
   position: absolute;
@@ -394,6 +401,7 @@ header{
   background: none;
 }
 
+.donation__switcher input[type="radio"]:hover + label:after,
 .donation__switcher input[type="radio"]:checked + label:after{
   content: "";
   position: absolute;
@@ -418,6 +426,7 @@ header{
   left: -25px;
 }
 
+.donation__switcher input[type="radio"]:hover + label span,
 .donation__switcher input[type="radio"]:checked + label span{
   color: #FE9013;
 }
@@ -658,6 +667,8 @@ footer{
   color : #FFFFFF;
 }
 
+.footer__menu a:hover,
+.footer__menu a:active,
 .active-href a{
   color : orange;
 }

@@ -7,6 +7,11 @@ a, a:visited {
 a:hover {
   text-decoration: none;
 }
+
+body, html{ 
+  padding: 0;
+  margin: 0;
+}
    
    /* ---------------------common components------------------ */
   
@@ -165,16 +170,18 @@ header{
   color : #FFFFFF;
 }
 
+.header__menu a:hover,
+.header__menu a:active,
 .active-href a{
   color : orange;
 }
-  
+ 
 .header__menu li{
   padding: 0;
   display: block;
   margin: 0 0 0 58px;
 }
-  
+
 .header__desined{
   font-size: 16px;
   font-weight: 500;
@@ -359,11 +366,30 @@ header{
   border-radius: 5px;
 }
 
-.backstage__item:hover .backstage__itemInfo{
+.backstage__ItemAnimation{
+  opacity: 0;
+  transform: translate(0, 60px);
+  transition: all 0.7s ease 0s;
+  z-index: 1;
+  position: absolute;
+  bottom: 20px;
+  left: 30px;
+  color: white;
+  font-weight: 700;
+  font-size: 24px;
+}
+
+
+.backstage__item:hover .backstage__ItemAnimation{
   transform: translate(0px, 0);
   transition: all 0.7s ease 0s;
   opacity: 1;
-  background: rgba(0, 0, 0, 0.2);
+}
+
+.backstage__item:hover .backstage__itemImg img{
+  transform: scale(1.055);
+  filter: brightness(0.4);
+  transition: 0.7s;
 }
   
 .backstage__itemImg{
@@ -371,17 +397,12 @@ header{
   height: 366px;
   position: relative;
   z-index: 100;
+  overflow: hidden;
 }
-
 
 .backstage__itemInfo{
   display: flex;
   justify-content: space-between;
-  opacity: 0;
-  transform: translate(0, -60px);
-  transition: all 0.7s ease 0s;
-  z-index: 1;
-  position: relative;
 }
   
 .backstage__itemTitle{
@@ -853,6 +874,8 @@ footer{
   color : #FFFFFF;
 }
 
+.footer__menu a:hover,
+.footer__menu a:active,
 .active-href a{
   color : orange;
 }
