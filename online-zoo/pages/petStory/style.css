@@ -192,6 +192,7 @@ header{
   color : #FFFFFF;
 }
 
+.header__desined a:hover,
 .header__desined a:active{
   color : orange;
 }
