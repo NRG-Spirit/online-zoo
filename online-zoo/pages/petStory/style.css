@@ -852,6 +852,14 @@ footer{
   color: #4B9200;
 }
 
+.footer__social:hover .footer__socialIMG{
+  background: #E47209;
+}
+
+.footer__social:hover span{
+  color: #E47209;
+}
+
 .footer__socialName{
   font-style: normal;
   font-weight: 400;
