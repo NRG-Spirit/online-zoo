@@ -850,19 +850,19 @@ footer{
   margin: 0 0 10px 0;
 }
 
-.footer__social:active .footer__socialIMG{
-  background: #4B9200;
-}
-.footer__social:active span{
-  color: #4B9200;
-}
-
 .footer__social:hover .footer__socialIMG{
   background: #E47209;
 }
 
 .footer__social:hover span{
   color: #E47209;
+}
+
+.footer__social:active .footer__socialIMG{
+  background: #4B9200;
+}
+.footer__social:active span{
+  color: #4B9200;
 }
 
 .footer__socialName{
