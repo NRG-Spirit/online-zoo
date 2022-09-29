@@ -131,6 +131,11 @@ h1{
   color: #4B9200;
 }
 
+.whiteBTN:hover{
+  border: 1px solid ##E47209;
+  color: ##E47209;
+}
+
   /* ---------------------header------------------ */
   
 header{
